@@ -1,0 +1,10 @@
+1,apple,10.5
+2,banana,5.2
+3,orange,8.7
+4,grape,12.3
+5,melon,15.0
+6,kiwi,7.8
+7,pear,9.1
+8,peach,11.2
+9,plum,6.5
+10,cherry,13.4
