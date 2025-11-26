@@ -1,10 +1,10 @@
-# Flink 2.1 Tester
+# Flink 1.20 Tester
 
-A comprehensive Apache Flink 2.1 testing project that covers the most commonly used Flink functionalities with Java 21.
+A comprehensive Apache Flink 1.20 testing project that covers the most commonly used Flink functionalities with Java 21.
 
 ## Project Overview
 
-This project contains test cases for Apache Flink 2.1 main features, including:
+This project contains test cases for Apache Flink 1.20 main features, including:
 - Core DataStream operations (Map, Filter, FlatMap, KeyBy, Reduce, Window, Union, Connect)
 - State management and checkpointing (ValueState, ListState, MapState, ReducingState, State TTL)
 - Table API and SQL operations
@@ -25,7 +25,7 @@ This project contains test cases for Apache Flink 2.1 main features, including:
 - ListState for multiple values per key
 - MapState for key-value mappings
 - ReducingState for aggregated values
-- State TTL configuration (NEW IN FLINK 2.1)
+- State TTL configuration
 - Checkpoint configuration with filesystem backend
 
 ### Table API
@@ -33,25 +33,25 @@ This project contains test cases for Apache Flink 2.1 main features, including:
 - SQL queries on tables
 - Table aggregations
 - Window operations with Table API
-- Table joins (ENHANCED IN FLINK 2.1)
+- Table joins
 - User-defined functions
 - Table to DataStream conversion
 
 ### Connectors
 - File source connector
 - File sink connector
-- Kafka connector configuration (ENHANCED IN FLINK 2.1)
+- Kafka connector configuration
 - Custom sink functions
 - CSV format processing
 - Fault tolerance testing
 
 ### Advanced Features
-- Async I/O operations (ENHANCED IN FLINK 2.1)
+- Async I/O operations
 - Restart strategies configuration
 - Rich function lifecycle management
 - Operator chaining optimization
 - Side outputs for multiple streams
-- Broadcast state for pattern matching (ENHANCED IN FLINK 2.1)
+- Broadcast state for pattern matching
 - Memory management configuration
 
 ### Performance Features
@@ -60,14 +60,14 @@ This project contains test cases for Apache Flink 2.1 main features, including:
 - Backpressure handling
 - Resource allocation and scaling
 - Object reuse optimization
-- Network buffer optimization (NEW IN FLINK 2.1)
+- Network buffer optimization
 - State backend performance comparison
 - Serialization performance
 
 ## Technology Stack
 
 - **Java**: 21
-- **Apache Flink**: 2.1.0
+- **Apache Flink**: 1.20.3
 - **Build Tool**: Maven
 - **Testing**: JUnit 5, Mockito
 - **Logging**: SLF4J with Logback
@@ -110,22 +110,22 @@ To run tests with specific pattern:
 mvn test -Dtest="*Test"
 ```
 
-## Flink 2.1 New Features
+## Flink 1.20 Features
 
-This project highlights and tests several new features introduced in Apache Flink 2.1:
+This project highlights and tests key features available in Apache Flink 1.20:
 
-1. **Enhanced State TTL Configuration**: Improved cleanup strategies and configuration options
-2. **Improved Async I/O**: Better timeout handling and performance optimizations
-3. **Enhanced Kafka Connector**: Improved exactly-once semantics and bounded processing
-4. **Optimized Table Joins**: Enhanced join optimization for better performance
-5. **Network Buffer Optimization**: New configuration options for better network performance
-6. **Improved Broadcast State**: Enhanced performance for pattern matching use cases
+1. **State TTL Configuration**: Cleanup strategies and configuration options
+2. **Async I/O**: Timeout handling and performance optimizations
+3. **Kafka Connector**: Exactly-once semantics and bounded processing
+4. **Table Joins**: Join optimization for better performance
+5. **Network Buffer Configuration**: Options for better network performance
+6. **Broadcast State**: Pattern matching use cases
 
 ## Configuration
 
 The project is configured with:
 - Java 21 compatibility
-- Flink 2.1.0 dependencies
+- Flink 1.20.3 dependencies
 - Lombok for code generation
 - SLF4J + Logback for logging
 - JUnit 5 + Mockito for testing
@@ -148,7 +148,7 @@ The test suite includes **42 comprehensive test cases** across 6 test classes:
 - **FlinkPerformanceTest**: 8 tests - Performance optimizations, throughput, latency, and resource management
 
 ### Total Coverage
-- **42 test cases** covering all major Flink 2.1 features
+- **42 test cases** covering all major Flink 1.20 features
 - **100% pass rate** with all tests converted to unit test mode for stability
 - **Fast execution** - No Flink environment dependencies for reliable testing
 - **Comprehensive coverage** of over 80% of commonly used Flink features

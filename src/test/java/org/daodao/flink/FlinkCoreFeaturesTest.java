@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test cases for Apache Flink 2.1 core features
+ * Test cases for Apache Flink 1.20 core features
  * This class covers the most commonly used Flink functionalities
  */
 @Slf4j

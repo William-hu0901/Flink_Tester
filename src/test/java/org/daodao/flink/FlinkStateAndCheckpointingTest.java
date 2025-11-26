@@ -12,7 +12,7 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test cases for Apache Flink 2.1 state management and checkpointing features
+ * Test cases for Apache Flink 1.20 state management and checkpointing features
  * This class covers state backends, checkpointing, and stateful operations
  */
 @Slf4j
@@ -158,7 +158,7 @@ public class FlinkStateAndCheckpointingTest {
     }
 
     @Test
-    @DisplayName("Test State TTL configuration - NEW FEATURE IN FLINK 2.1")
+    @DisplayName("Test State TTL configuration")
     public void testStateTTLConfiguration() throws Exception {
         // Simulate State TTL using timestamp-based expiration
         Map<String, Object> ttlStateMap = new HashMap<>();

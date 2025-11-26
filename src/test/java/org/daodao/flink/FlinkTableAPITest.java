@@ -14,7 +14,7 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test cases for Apache Flink 2.1 Table API features
+ * Test cases for Apache Flink 1.20 Table API features
  * This class covers Table API operations, SQL queries, and table conversions
  */
 @Slf4j
@@ -171,7 +171,7 @@ public class FlinkTableAPITest {
     }
 
     @Test
-    @DisplayName("Test table joins - NEW FEATURE IN FLINK 2.1")
+    @DisplayName("Test table joins")
     public void testTableJoins() throws Exception {
         // Simulate customer table
         List<Map<String, Object>> customersData = Arrays.asList(

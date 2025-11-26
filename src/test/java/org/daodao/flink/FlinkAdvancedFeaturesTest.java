@@ -23,14 +23,14 @@ import java.util.concurrent.atomic.AtomicInteger;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test cases for Apache Flink 2.1 advanced features
+ * Test cases for Apache Flink 1.20 advanced features
  * This class covers async operations, restart strategies, and performance optimizations
  */
 @Slf4j
 public class FlinkAdvancedFeaturesTest {
 
     @Test
-    @DisplayName("Test async I/O operations - NEW FEATURE IN FLINK 2.1")
+    @DisplayName("Test async I/O operations")
     public void testAsyncIOOperations() throws Exception {
         // Test async function directly without full Flink execution
         ExecutorService executorService = Executors.newFixedThreadPool(4);
@@ -221,7 +221,7 @@ public class FlinkAdvancedFeaturesTest {
     }
 
     @Test
-    @DisplayName("Test broadcast state for pattern matching - NEW FEATURE IN FLINK 2.1")
+    @DisplayName("Test broadcast state for pattern matching")
     public void testBroadcastStateForPatternMatching() throws Exception {
         // Test broadcast state logic directly
         List<String> results = new ArrayList<>();
