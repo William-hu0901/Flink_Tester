@@ -21,7 +21,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test cases for Apache Flink 2.1 connectors
+ * Test cases for Apache Flink 1.20 connectors
  * This class covers file source, Kafka connector, and sink operations
  */
 @Slf4j
@@ -74,7 +74,7 @@ public class FlinkConnectorsTest {
     }
 
     @Test
-    @DisplayName("Test Kafka connector configuration - NEW FEATURE IN FLINK 2.1")
+    @DisplayName("Test Kafka connector configuration")
     public void testKafkaConnectorConfiguration() throws Exception {
         // Test Kafka connector configuration logic without actual Kafka
         String bootstrapServers = "localhost:9092";

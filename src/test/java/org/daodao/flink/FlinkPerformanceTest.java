@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test cases for Apache Flink 2.1 performance features
+ * Test cases for Apache Flink 1.20 performance features
  * This class covers performance optimizations, monitoring, and tuning
  */
 @Slf4j
@@ -138,7 +138,7 @@ public class FlinkPerformanceTest {
     }
 
     @Test
-    @DisplayName("Test network buffer optimization - NEW FEATURE IN FLINK 2.1")
+    @DisplayName("Test network buffer optimization")
     public void testNetworkBufferOptimization() throws Exception {
         List<String> results = new ArrayList<>();
         Map<Integer, List<String>> partitionedData = new HashMap<>();
